@@ -1,2 +1,2 @@
 # test-repo
-Test automated branches creation
+Test automated release branches creation and branch update process.
