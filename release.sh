@@ -65,7 +65,7 @@ function update_version_file() {
 
 function create_release_candidate() {
     local tag_message="${1}"
-    get_last_version_data
+    get_last_version_data --first-parent
     # Create a release candidate only when develop is the origin
     if [ ${current_branch} == ${DEVELOP_BRANCH} ]; then
         # Increase version 'X' component with each new release. Reset to zero 'Y' and 'Z' components.
